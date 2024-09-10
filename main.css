@@ -1,0 +1,230 @@
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Stone100: hsl(30, 54%, 90%);
+  --Stone150: hsl(30, 18%, 87%);
+  --Stone600: hsl(30, 10%, 34%);
+  --Stone900: hsl(24, 5%, 18%);
+  --Brown800: hsl(14, 45%, 36%);
+  --Rose50: hsl(330, 100%, 98%);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* *********** HERO STYLES *********** */
+
+.hero-section {
+  width: 100%;
+}
+
+.hero-img {
+  display: block;
+  max-width: 100%;
+}
+
+/* *********** RECIPE SECTION STYLES *********** */
+
+.main-section {
+  width: 100%;
+}
+
+.recipe-text-div {
+  width: 90%;
+  margin: auto;
+}
+
+.recipe-text-div h1 {
+  font-size: 2em;
+  text-transform: capitalize;
+  letter-spacing: 0.3px;
+  font-family: "Young Serif", system-ui;
+  font-weight: lighter;
+}
+
+.recipe-text-div p {
+  font-size: 16px;
+  letter-spacing: 0.3px;
+  line-height: 1.4;
+  font-family: "Outfit", sans-serif;
+}
+
+/* *********** PREP SECTION STYLES *********** */
+
+.prep-div {
+  width: 80%;
+  margin: auto;
+  background-color: var(--Rose50);
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+}
+
+.prep-div h3 {
+  color: purple;
+  font-family: "Young Serif", system-ui;
+  padding-left: 20px;
+  letter-spacing: 0.3px;
+}
+
+.prep-div span {
+  font-weight: bolder;
+  color: var(--Stone600);
+}
+
+.prep-div ul {
+  line-height: 2;
+  font-family: "Outfit", sans-serif;
+}
+
+.prep-div ul li {
+  color: var(--Stone600);
+  padding-left: 20px;
+}
+
+/* *********** INGRIDENT SECTION STYLES *********** */
+
+.ingr-div {
+  width: 90%;
+  margin: auto;
+}
+
+.ingr-div h2 {
+  font-family: "Young Serif", system-ui;
+  color: var(--Brown800);
+  letter-spacing: 0.3px;
+  padding-left: 20px;
+}
+
+.ingr-div ul {
+  line-height: 2;
+  font-family: "Outfit", sans-serif;
+  color: var(--Stone900);
+}
+
+.ingr-div li {
+  padding-left: 20px;
+}
+
+.upper-hr {
+  max-width: 90%;
+  margin: 2em auto 2em auto;
+  background-color: var(--Stone900);
+}
+
+/* *********** INSTRUCTION SECTION STYLES *********** */
+
+.instruction-div {
+  width: 90%;
+  margin: auto;
+}
+
+.instruction-div h2 {
+  font-family: "Young Serif", system-ui;
+  color: var(--Brown800);
+  letter-spacing: 0.3px;
+  padding-left: 20px;
+}
+
+.instruction-div ol {
+  line-height: 2;
+  font-family: "Outfit", sans-serif;
+  color: var(--Stone900);
+}
+
+.instruction-div li {
+  padding-left: 20px;
+}
+
+.instruction-div ol span {
+  font-weight: bolder;
+}
+
+.lower-hr {
+  max-width: 90%;
+  margin: 2em auto 2em auto;
+  background-color: var(--Stone900);
+}
+
+/* *********** NUTRITION SECTION STYLES *********** */
+
+.nutrition-div {
+  width: 90%;
+  margin: auto;
+}
+
+.nutrition-div h2 {
+  font-family: "Young Serif", system-ui;
+  color: var(--Brown800);
+  letter-spacing: 0.3px;
+  padding-left: 20px;
+}
+
+.nutrition-div p {
+  font-family: "Outfit", sans-serif;
+  color: var(--Stone900);
+  letter-spacing: 0.3px;
+  padding-left: 20px;
+  font-size: 16px;
+}
+
+.nutrition-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nutrition-cards {
+  border-bottom: 1px solid var(--Brown800);
+}
+
+#no-border {
+  border: none;
+}
+
+.nutrition-cards span {
+  width: 55px;
+  margin: 0.5em auto 0.5em 3em;
+  color: var(--Stone900);
+  text-align: left;
+  font-family: "Outfit", sans-serif;
+}
+
+.nutrition-cards p {
+  font-family: "Outfit", sans-serif;
+  font-weight: bolder;
+  margin: auto 3em auto 0;
+  padding: 10px;
+  color: var(--Brown800);
+  width: 40%;
+}
+
+.attribution {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2em auto auto auto;
+  font-family: "Outfit", sans-serif;
+  color: var(--Stone900);
+  letter-spacing: 0.3px;
+}
+
+/* *********** MEDIA QUERIES STYLES DESKTOP*********** */
+
+@media screen and (min-width: 1000px) {
+  .hero-section {
+    width: 90%;
+    margin: 2em auto auto auto;
+  }
+
+  .hero-img {
+    border-radius: 10px;
+  }
+
+  .prep-div {
+    width: 90%;
+  }
+}
